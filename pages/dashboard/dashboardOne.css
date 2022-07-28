@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #01684f;
+  --ternary-color: rgb(245, 130, 32);
+  --white-shade-1: #f0f0f0;
+  --transition: all 300ms ease-in;
+  --font-heading: "Montserrat", sans-serif;
+  --font-text: "Calibri", arial;
+  --font-primary: "Poppins", sans-serif;
+  --padding-regular-1: 2rem;
+  --padding-regular-2: 1rem;
+  --padding-regular-3: 0.75rem;
+  --padding-regular-4: 0.25rem;
+}
+
+.dashboard-section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* mobile sectoin */
+
+/* mobile navbar */
+#mobile-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.mobile-navbar__logo {
+  width: 10rem;
+}
+
+#mobile-navbar__sidebutton-open {
+}
+
+#sidebar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: yellow;
+  /* transition: all 2000ms ease-in-out; */
+  transform: translateX(100%);
+  z-index: 2;
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateX(17%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(17%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.mobile-navbar__sidebutton--close{
+  background-color: #01684f;
+}
