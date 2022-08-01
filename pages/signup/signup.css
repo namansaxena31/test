@@ -189,7 +189,6 @@ input:focus-within {
 }
 
 .input__container {
-  margin: auto;
   display: grid;
   grid-template-columns: 20% 80%;
   justify-content: center;
